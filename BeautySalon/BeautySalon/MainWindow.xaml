@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BeautySalon"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Главная" Height="550" Width="900" MinHeight="450" MinWidth="800" Background="#F5E9E4">
     <Grid>
-        
+        <Menu HorizontalAlignment="Right" Height="50" VerticalAlignment="Top" Background="#C7BEBA">
+            <Button Content="Аккаунт" Name="BtnBxod" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Menu>
+        <StatusBar Height="50" VerticalAlignment="Bottom" Background="#C7BEBA"/>
     </Grid>
 </Window>

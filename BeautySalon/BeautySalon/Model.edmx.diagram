@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4cb1362745224fb19fa7ad5528f13a6f" Name="Diagram1">
+        <EntityTypeShape EntityType="beautysalonModel.Admin" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="beautysalonModel.Customer" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="beautysalonModel.Order" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="beautysalonModel.Services" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="beautysalonModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="beautysalonModel.Users" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="beautysalonModel.FK_Order_Admin" ManuallyRouted="false" />
+        <AssociationConnector Association="beautysalonModel.FK_Users_Admin" ManuallyRouted="false" />
+        <AssociationConnector Association="beautysalonModel.FK_Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="beautysalonModel.FK_Order_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="beautysalonModel.FK_Order_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
