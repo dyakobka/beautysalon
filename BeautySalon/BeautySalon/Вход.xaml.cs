@@ -23,5 +23,20 @@ namespace BeautySalon
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var user = db.Users
+                .AsNoTracking()
+                .FirstOrDefault(u => u.Login == TextBoxLogin.Text && u.Password == PasswordBox.Password);
+            if (user == null)
+            {
+                MessageBox.Show("Пользователь с такими данными не найден");
+                return;
+            }
+            MainWindow main = new MainWindow();
+            main.Show();
+            Close();
+        }
     }
 }
