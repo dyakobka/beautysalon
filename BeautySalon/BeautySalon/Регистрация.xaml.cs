@@ -25,13 +25,6 @@ namespace BeautySalon
             InitializeComponent();
         }
 
-        private void BtnBack_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow avtoriz = new MainWindow();
-            avtoriz.Show();
-            Close();
-        }
-
         private void BtnClear_Click(object sender, RoutedEventArgs e)
         {
             TextBoxLogin.Clear();
@@ -42,7 +35,14 @@ namespace BeautySalon
             PasswordBox.Clear();
         }
 
-        private void BtnDone_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Вход vxod = new Вход();
+            vxod.Show();
+            Close();
+        }
+
+        private void Registr_Click(object sender, RoutedEventArgs e)
         {
             if (TextBoxWamilia.Text != "" && TextBoxName.Text != "" && TextBoxOtchestvo.Text != ""
                 && TextBoxLogin.Text != "" && PasswordBox.Password != "" && PassworBox2.Password != "")
@@ -61,9 +61,20 @@ namespace BeautySalon
                     if (command.ExecuteNonQuery() == 1)
                         MessageBox.Show("Все готово. Теперь вы можете войти", "Готово");
                     ConnectionDB.connectionString.Close();
+                    TextBoxLogin.Clear();
+                    TextBoxWamilia.Clear();
+                    TextBoxName.Clear();
+                    TextBoxOtchestvo.Clear();
+                    PassworBox2.Clear();
+                    PasswordBox.Clear();
+                    Вход vxod = new Вход();
+                    vxod.Show();
+                    Close();
                 }
                 else
                     MessageBox.Show("Пароли не совпадают", "Ошибка");
+                PassworBox2.Clear();
+                PasswordBox.Clear();
             }
             else
                 MessageBox.Show("Заполните все поля", "Ошибка");

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-\\192.168.0.245\share student$\Desktop Student$\Дьяконова Вероника\Рабочий стол\beautysalon\BeautySalon\BeautySalon\obj\Debug\
+\\192.168.0.245\share student$\Desktop Student$\дьяконова вероника\Рабочий стол\beautysalon\BeautySalon\BeautySalon\obj\Debug\
 BeautySalon
 none
 false
 DEBUG;TRACE
-\\192.168.0.245\share student$\Desktop Student$\Дьяконова Вероника\Рабочий стол\beautysalon\BeautySalon\BeautySalon\App.xaml
-4-278631366
+\\192.168.0.245\share student$\Desktop Student$\дьяконова вероника\Рабочий стол\beautysalon\BeautySalon\BeautySalon\App.xaml
+6-686519833
 2-1881755278
-20-1310701633
-22-1589078890
-MainWindow.xaml;Администрация.xaml;Вход.xaml;Регистрация.xaml;
+22-1944918539
+221975178699
+MainWindow.xaml;Администрация.xaml;Аккаунт.xaml;Главное.xaml;Менеджер.xaml;Регистрация.xaml;
 
 False
 

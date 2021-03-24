@@ -110,8 +110,14 @@
     <Compile Include="Администрация.xaml.cs">
       <DependentUpon>Администрация.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Вход.xaml.cs">
-      <DependentUpon>Вход.xaml</DependentUpon>
+    <Compile Include="Аккаунт.xaml.cs">
+      <DependentUpon>Аккаунт.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Главное.xaml.cs">
+      <DependentUpon>Главное.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Менеджер.xaml.cs">
+      <DependentUpon>Менеджер.xaml</DependentUpon>
     </Compile>
     <Compile Include="Регистрация.xaml.cs">
       <DependentUpon>Регистрация.xaml</DependentUpon>
@@ -132,7 +138,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Вход.xaml">
+    <Page Include="Аккаунт.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Главное.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Менеджер.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -190,6 +204,7 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\group 1.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

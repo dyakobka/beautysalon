@@ -5,8 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BeautySalon"
         mc:Ignorable="d"
-        Title="Администрация" Height="450" Width="800">
+       Title="Админ" Height="550" Width="900" MinHeight="450" MinWidth="800" MaxWidth="1100" Background="#F5E9E4">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Добавить" HorizontalAlignment="Right" Margin="0,0,772,10" VerticalAlignment="Bottom" Width="110"/>
+        <Button Content="Удалить" HorizontalAlignment="Right" Margin="0,0,577,10" VerticalAlignment="Bottom" Width="110"/>
+        <DataGrid x:Name="DgridAgent" AutoGenerateColumns="False" HorizontalAlignment="Right" Height="454" VerticalAlignment="Bottom" Width="305" Margin="0,0,577,55">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Фамилия}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Имя}"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Отчество}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="DgridAgentDemands" AutoGenerateColumns="False" HorizontalAlignment="Right" Height="170" Margin="0,0,10,310" VerticalAlignment="Bottom" Width="526">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Type}" Width="40"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding ClientId}" Width="170"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding AgentId}" Width="150"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Address}" Width="90"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding MaxPrice}" Width="*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="DgrigAgentSupplies" AutoGenerateColumns="False" HorizontalAlignment="Right" Height="170" Margin="0,0,10,97" VerticalAlignment="Bottom" Width="526">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Aparment}" Width="190"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding Price}" Width="50"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding ClientId}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Binding="{Binding AgentId}" Width="*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock Margin="0,0,482,485" TextWrapping="Wrap" Text="Заказы" Height="17" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="54"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,487,272" TextWrapping="Wrap" Text="2" VerticalAlignment="Bottom" Height="17" Width="48"/>
+        <Button x:Name="BtnBack" Content="Назад" Margin="807,479,0,0" Width="75" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left"/>
     </Grid>
 </Window>

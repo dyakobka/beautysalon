@@ -24,5 +24,32 @@ namespace BeautySalon
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            /*beautysalonEntities beautysalonEntities = new beautysalonEntities();
+            using (var db = beautysalonEntities)
+            {
+                var users = db.Users
+                    .AsNoTracking()
+                    .FirstOrDefault(u => u.Login == TextBoxLogin.Text && u.Password == PasswordBox.Password);
+                if (users == null)
+                {
+                    MessageBox.Show("Пользователь с такими данными не найден");
+                    return;
+                }
+            */
+                MainWindow main = new MainWindow();
+                main.Show();
+                Close();
+            //}
+        }
+
+        private void Registr_Click(object sender, RoutedEventArgs e)
+        {
+            Регистрация регистрация = new Регистрация();
+            регистрация.Show();
+            Close();
+        }
     }
 }
