@@ -8,11 +8,11 @@
         Title="Регистрация" Height="550" Width="700" MinHeight="450" MinWidth="700" MaxWidth="1100" Background="#F5E9E4">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.18*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="440*"/>
         </Grid.RowDefinitions>
-        <Grid Background="#C7BEBA" Grid.ColumnSpan="2"/>
-        <StatusBar Height="50" VerticalAlignment="Bottom" Background="#C7BEBA" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Grid Background="#C7BEBA"/>
+        <StatusBar Height="50" VerticalAlignment="Bottom" Background="#C7BEBA" Grid.Row="1"/>
         <Menu HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="60" Margin="10,10,0,0" Background="#75574A">
             <MenuItem Height="60" Width="60" Background="#75574A">
                 <MenuItem.Icon>
@@ -22,19 +22,19 @@
             </MenuItem>
 
         </Menu>
-        <TextBlock Text="Логин" Grid.Row="1" VerticalAlignment="Center" Height="25" Margin="140,168,454,247" FontSize="16"/>
-        <TextBox x:Name="TextBoxLogin" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="25" Margin="265,168,127,247" Width="300"/>
-        <TextBlock Text="Пароль" Grid.Row="1" VerticalAlignment="Center" Height="25" Margin="139,214,455,201" FontSize="16"/>
-        <PasswordBox x:Name="PasswordBox" Grid.Row="1" VerticalAlignment="Center" Height="24" Margin="265,214,127,202" Width="300"/>
-        <Button Grid.Row="1" VerticalAlignment="Top" Margin="143,316,429,0" Content="Назад" Click="Button_Click"></Button>
-        <Button x:Name="Registr" Grid.Row="1" VerticalAlignment="Top" Margin="435,316,137,0" Click="Registr_Click">Регистрация</Button>
-        <TextBlock Text="Фамилия" Grid.Row="1" VerticalAlignment="Center" Height="25" Margin="140,40,454,375" FontSize="16"/>
-        <TextBox x:Name="TextBoxWamilia" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="25" Margin="265,40,127,375" Width="300"/>
-        <TextBlock Text="Имя" Grid.Row="1" VerticalAlignment="Center" Height="25" Margin="140,84,454,331" FontSize="16"/>
-        <TextBox x:Name="TextBoxName" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="25" Margin="265,84,127,331" Width="300"/>
-        <TextBlock Grid.Row="1" VerticalAlignment="Center" Height="41" Margin="140,257,454,142" FontSize="16"><Run Text="Повторите"/><LineBreak/><Run Text="пароль"/></TextBlock>
-        <PasswordBox x:Name="PassworBox2" Grid.Row="1" VerticalAlignment="Center" Height="24" Margin="265,266,127,150" Width="300"/>
-        <TextBlock Text="Отчество" Grid.Row="1" VerticalAlignment="Center" Height="25" Margin="140,125,454,290" FontSize="16"/>
-        <TextBox x:Name="TextBoxOtchestvo" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="25" Margin="265,125,127,290" Width="300"/>
+        <TextBlock Text="Логин" Grid.Row="1" VerticalAlignment="Center" Height="25" Margin="0,157,454,258" FontSize="16" HorizontalAlignment="Right" Width="98"/>
+        <TextBlock Text="Пароль" Grid.Row="1" VerticalAlignment="Center" Height="25" Margin="0,203,455,212" FontSize="16" HorizontalAlignment="Right" Width="98"/>
+        <Button Grid.Row="1" VerticalAlignment="Bottom" Margin="143,0,429,84" Content="Назад" Click="Button_Click"></Button>
+        <Button x:Name="Registr" Grid.Row="1" VerticalAlignment="Bottom" Margin="435,0,137,84" Click="Registr_Click">Регистрация</Button>
+        <TextBlock Text="Фамилия" Grid.Row="1" VerticalAlignment="Center" Height="25" Margin="0,29,454,386" FontSize="16" HorizontalAlignment="Right" Width="98"/>
+        <TextBox x:Name="TextBoxWamilia" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="25" Margin="265,29,0,386" Width="300" HorizontalAlignment="Left"/>
+        <TextBlock Text="Имя" Grid.Row="1" VerticalAlignment="Center" Height="25" Margin="0,73,454,342" FontSize="16" HorizontalAlignment="Right" Width="98"/>
+        <TextBox x:Name="TextBoxName" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="25" Margin="265,73,0,342" Width="300" HorizontalAlignment="Left"/>
+        <TextBox x:Name="TextBoxOtchestvo" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="25" Margin="265,114,0,301" Width="300" HorizontalAlignment="Left"/>
+        <TextBox x:Name="TextBoxLogin" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="25" Margin="265,157,0,258" Width="300" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Row="1" VerticalAlignment="Center" Height="41" Margin="0,246,454,153" FontSize="16" HorizontalAlignment="Right" Width="98"><Run Text="Повторите"/><LineBreak/><Run Text="пароль"/></TextBlock>
+        <PasswordBox x:Name="PasswordBox" Grid.Row="1" VerticalAlignment="Center" Height="24" Margin="265,203,0,213" Width="300" HorizontalAlignment="Left"/>
+        <PasswordBox x:Name="PassworBox2" Grid.Row="1" VerticalAlignment="Center" Height="24" Margin="265,255,0,161" Width="300" HorizontalAlignment="Left"/>
+        <TextBlock Text="Отчество" Grid.Row="1" VerticalAlignment="Center" Height="25" Margin="0,114,454,301" FontSize="16" HorizontalAlignment="Right" Width="98"/>
     </Grid>
 </Window>

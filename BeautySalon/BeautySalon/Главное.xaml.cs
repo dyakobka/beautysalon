@@ -25,5 +25,11 @@ namespace BeautySalon
             InitializeComponent();
         }
 
+        private void BtnBxod_Click(object sender, RoutedEventArgs e)
+        {
+            Аккаунт аккаунт = new Аккаунт();
+            аккаунт.Show();
+            Close();
+        }
     }
 }

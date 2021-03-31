@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BeautySalon"
         mc:Ignorable="d"
-        Title="Аккаунт" Height="450" Width="800">
+        Title="Аккаунт" Height="450" Width="800" MinHeight="450" MinWidth="800" MaxWidth="1100" Background="#F5E9E4">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Image Height="130" Width="130" VerticalAlignment="Top" Margin="67,50,67,0" Source="Resources/ros.png"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,324,378" TextWrapping="Wrap" Text="Моя учетная запись" VerticalAlignment="Bottom" FontFamily="Consolas" Height="22" Width="184" FontSize="18"/>
+        <Button Content="Выйти" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Width="244" Margin="0,0,0,10"/>
+        <Button Content="Изменить данные" Grid.Column="1" HorizontalAlignment="Left" Margin="172,270,0,0" VerticalAlignment="Top" Width="183"/>
     </Grid>
 </Window>

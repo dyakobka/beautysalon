@@ -37,10 +37,9 @@ namespace BeautySalon
                 {
                     MessageBox.Show("Пользователь с такими данными не найден");
                     return;
-                }
-            */
-                MainWindow main = new MainWindow();
-                main.Show();
+                }*/
+                Вход вход = new Вход();
+                вход.Show();
                 Close();
             //}
         }

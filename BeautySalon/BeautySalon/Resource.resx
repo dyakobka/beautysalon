@@ -121,4 +121,10 @@
   <data name="Group_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\group 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="timon_pumbaa_wall_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\timon-pumbaa-wall-9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

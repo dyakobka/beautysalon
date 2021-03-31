@@ -204,6 +204,9 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\ros.png" />
+    <None Include="Resources\ros.jfif" />
+    <Resource Include="Resources\timon-pumbaa-wall-9.jpg" />
     <Resource Include="Resources\group 1.png" />
   </ItemGroup>
   <ItemGroup>
